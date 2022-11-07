@@ -1,0 +1,5 @@
+DROP TABLE IF EXISTS poll;  
+CREATE TABLE poll (  
+email VARCHAR(100) PRIMARY KEY,  
+type_music INT NOT NULL
+);
