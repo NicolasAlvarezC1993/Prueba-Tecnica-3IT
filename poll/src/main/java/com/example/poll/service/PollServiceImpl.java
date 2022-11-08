@@ -27,7 +27,7 @@ public class PollServiceImpl implements PollService{
     @Override
     public Poll save(PollDto pollDto) {
         LOGGER.info ("Se validan los campos enviados segun el negocio, poll :"+pollDto.toString());
-        Pattern pattern = Pattern.compile("([a-z0-9]+(\\.?[a-z0-9])*)+@(([a-z]+)\\.([a-z]+))+");
+        Pattern pattern = Pattern.compile("^(?=.{1,64}@)[A-Za-z0-9_-]+(\\.[A-Za-z0-9_-]+)*@[^-][A-Za-z0-9-]+(\\.[A-Za-z0-9-]+)*(\\.[A-Za-z]{2,})$");
         Matcher mather = pattern.matcher(pollDto.getEmail());
         if (!mather.find()) {
             throw new BusinessException("El formato del correo es invalido");

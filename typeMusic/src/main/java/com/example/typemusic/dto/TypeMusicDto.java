@@ -8,6 +8,6 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 @AllArgsConstructor
 public class TypeMusicDto {
-    String id;
+    Long id;
     String name;
 }

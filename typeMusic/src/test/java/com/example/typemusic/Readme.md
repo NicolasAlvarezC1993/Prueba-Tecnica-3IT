@@ -1,5 +1,5 @@
-# Poll-App
-Aplicación desarrollada con spring-boot 2.7.5, la cual se encarga de crear y obtener las encuestas.
+# TypeMusic-App
+Aplicación desarrollada con spring-boot 2.7.5, la cual se encarga de crear y obtener laos tipos de los estilos musicales.
 
 [![Build Status](https://travis-ci.org/codecentric/springboot-sample-app.svg?branch=master)](https://travis-ci.org/codecentric/springboot-sample-app)
 [![License](http://img.shields.io/:license-apache-blue.svg)](http://www.apache.org/licenses/LICENSE-2.0.html)
@@ -27,7 +27,7 @@ java -jar poll-0.0.1-SNAPSHOT
 Para ver la documentación Swagger se debe acceder a la ruta :
 
 ```shell
-http://localhost:8080/swagger-ui/index.html
+http://localhost:8081/swagger-ui/index.html
 ```
 
 ## Copyright
